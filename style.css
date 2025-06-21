@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.header {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-links a {
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+}
+
+.header-links a:hover {
+  background-color: #3d3d3d;
+}
+
+.header img {
+  width: 60px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.landing-page {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  color: white;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.text-section input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.text-section button {
+  margin-left: 10px;
+}
+
+.image-section img {
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.kamal {
+  padding: 20px;
+}
+
+.our {
+  padding: 50px;
+  text-align: center;
+}
+
+.our span {
+  color: #45a049;
+  text-transform: uppercase;
+}
+
+.our h1 {
+  margin-top: 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;        /* ✅ توسيط البطاقات */
+  gap: 30px;                      /* ✅ مسافات بين الكروت */
+  padding: 0 60px 60px 60px;      /* ✅ مساحة يمين ويسار وأسفل */
+  box-sizing: border-box;
+}
+
+.card {
+  width: 280px;                   /* ✅ حجم ثابت مناسب للعرض */
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);    /* ✅ تفاعل عند المرور */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.card-info img {
+  width: 50px;
+}
+
+.card-name p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.card-name h4 {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
